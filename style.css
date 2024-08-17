@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+:root{
+    --rose-bold:2.2rem;
+    --rose-normall:1.3rem;
+    --rose-small:1.2rem;
+    --tablet-normal:1.4rem;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu{
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+}
+.menu__titr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+.menu__titr-txt{
+    font-size: var(--rose-bold);
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.menu__media{
+    display: none;
+}
+.menu__work{
+    display: none;
+}
+.menu__list{
+    display: none;
+}
+.menu__contact{
+    display: none;
+}
+.menu__media{
+    display: none;
+}
+.page{
+    width: 100%;
+}
+.page__meta{
+    width: 100%;
+    height: 235px;
+    background-color: #f7f8f9;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+}
+.page__meta-about{
+    font-size: var(--rose-normall);
+}
+.page__meta-scroll{
+    padding-top: 20px;
+    font-size: var(--rose-normall);
+    color: #6f6f70;
+}
+.page__album{
+    width: 100%;
+    height: auto;
+    padding-top: 4px;
+}
+.page__album-imag{
+    width: 100%;
+    padding-top: 4px;
+}
+.page__footer{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page__footer-icon{
+    display: flex;
+    margin-bottom: 6px;
+}
+.footer-icon__icon{
+    width: 32px;
+    height:32px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    margin-right: 8px;
+}
+.page__footer-txt{
+    font-size: var(--rose-normall);
+    color: #aeafb1;
+    margin-top: 6px;
+}
+.page__album-hover:hover{
+
+    background-color: aqua;
+
+}
+
+
+@media (min-width: 600px) {
+    body{
+        display: flex;
+    }
+    .menu{
+        width: 32%;
+        padding: 42px;
+        display: block;
+        flex-direction: column;
+    }
+    .menu__titr{
+        padding: 0;
+    }
+    .menu__titr-icon{
+        display: none;
+    }
+    .menu__work{
+        display: flex;
+        padding-top: 32px;
+        
+    }
+    .menu__work-txt{
+        font-size: var(--tablet-normal);
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: column;  
+    }
+    .menu__list-txt{
+        font-size: var(--tablet-normal);
+        text-decoration: none;
+        color: #6f6f70;
+        font-weight: 500;
+        padding-top: 8px;
+    }
+    .menu__contact{
+        display: flex;
+        padding-top: 22px;
+    }
+    .menu__contact-txt{
+        font-size: var(--tablet-normal);
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+    }
+    .menu__media{
+        display: flex;
+        padding-top: 16px;
+    }
+    .page{
+        width:64%;
+    }
+    .page__meta{
+        height: 440px; 
+    }
+    .page__meta-about{
+        font-size: var(--rose-bold);
+    }
+    .page__meta-scroll{
+        font-size: 1.8rem;
+    }
+    .page__album{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page__album-divimag{
+        width: 50%;
+        padding: 2px 4px;
+    }
+    .page__album-imag{
+        width: 100%;
+        padding-top: 0;
+    }
+    .page__footer{
+        height: 148px;
+    }
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 54px;
+        height: 54px;
+        border-radius: 8px;
+        background-color: #bbbbd3b0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 40px 40px 0;
+    }
+}
+@media (min-width: 900px) {
+    .menu{
+        width: 28%;
+    }
+    .page{
+        width:68%;
+    }
+    .page__meta{
+        height: 588px; 
+    }
+    .page__meta-about{
+        font-size:2.8rem;
+    }
+    .page__meta-scroll{
+        font-size: 2rem;
+    }
+}
+
